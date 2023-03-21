@@ -48,6 +48,8 @@ for (let i = 0; i < scores.length ; i++) {
     }
 }
 
+console.log(scores)
+console.log('***************************')
 // ==========================================
 // Opdracht 1c
 // Breid je script uit door de bijbehorende letter op te slaan in de 'grade'-property van ieder student-object in de array.
@@ -62,8 +64,20 @@ for (let i = 0; i < scores.length ; i++) {
 // ==========================================
 
 
-
-
+for (let i = 0; i < scores.length ; i++) {
+    if (scores[i].score < 60 && scores[i].grade == null ) {
+        console.log(scores[i].grade = 'F')
+    } else if (scores[i].score < 70 && scores[i].grade == null ) {
+        console.log(scores[i].grade = 'D')
+    } else if (scores[i].score < 80 && scores[i].grade == null ) {
+        console.log(scores[i].grade = 'C')
+    } else if (scores[i].score < 90 && scores[i].grade == null ) {
+        console.log(scores[i].grade = 'B')
+    } else {
+        console.log(scores[i].grade= 'A')
+    }
+}
+console.log(scores)
 
 // ==========================================
 // Opdracht 2
