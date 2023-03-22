@@ -91,7 +91,8 @@ const NOVIEmployees = [
 ];
 
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
-// Vóór het script zie je de originele objecten,
+// Vóór het script zie je de originele objecten,\
+console.log(NOVIEmployees)
 // Na jouw script zie je de aangepaste objecten:
 // console.log(NOVIEmployees) geeft: [
 //   { firstName: 'Nova', lastName: 'Eeken', email: 'Nova.Eeken@novi.nl' },
@@ -100,17 +101,22 @@ const NOVIEmployees = [
 //   { firstName: 'Mark', lastName: 'Rensen', email: 'Mark.Rensen@novi.nl' },
 //  ];
 // ==========================================
+// for (let i = 0; i < NOVIEmployees.length ; i++) {
+//
+// }
 
+console.log('***********************')
 
+for (let i = 0; i < NOVIEmployees.length ; i++) {
+    const employee = NOVIEmployees[i];  //vraag > waarom mag je hier een nieuwe variabele aan?
+    employee.email = NOVIEmployees[i].firstName.toLowerCase() + '.' + NOVIEmployees[i].lastName.toLowerCase() + '@novi.nl'
+}
 
-
-
+console.log(NOVIEmployees)
 
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
-
-
 
 
 // ==========================================
