@@ -48,7 +48,7 @@ for (let i = 0; i < scores.length ; i++) {
     }
 }
 
-console.log(scores)
+// console.log(scores)
 console.log('***************************')
 // ==========================================
 // Opdracht 1c
@@ -117,7 +117,7 @@ console.log(NOVIEmployees)
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
-
+//zet toLowerCase() erachter!
 
 // ==========================================
 // Opdracht 3
@@ -163,5 +163,57 @@ const students = [
 // ]
 // ==========================================
 
+for (let i = 0; i <students.length ; i++) {
+    if (students[i].zipCode === '3513') {
+        (students[i].neighborhood = 'Pijlsweerd')
+    } else if  (students[i].zipCode === '3514') {
+        (students[i].neighborhood = 'Vogelenbuurt')
+    } else if (students[i].zipCode === '3512') {
+        (students[i].neighborhood = 'Binnenstad')
+    } else if (students[i].zipCode === '3531') {
+       (students[i].neighborhood = 'Lombok')
+    } else if (students[i].zipCode === '3572') {
+        (students[i].neighborhood = 'Wittevrouwen')
+    } else if (students[i].zipCode === '3581') {
+        (students[i].neighborhood = 'Oudwijk')
+    } else if (students[i].zipCode === '3583') {
+       (students[i].neighborhood = 'Schildersbuurt')
+    }
+}
+    console.log(students)
 
 
+console.log('**************************')
+console.log('onderdeel 1 en onderdeel 2 ')
+console.log('***************************')
+
+
+const zipCode = null //vraag: je wilt deze eigenlijk niet uitprinten
+
+switch (zipCode) {
+    case '3514' :
+        console.log(students.neighborhood = 'Vogelenbuurt');
+        break
+    case '3513' :
+        console.log(students.neighborhood= 'Pijlsweerd');
+        break
+    case '3512' :
+        console.log(students.neighborhood='Binnenstad');
+        break
+    case '3531' :
+        console.log(students.neighborhood='Lombok');
+        break
+    case '3572' :
+        console.log(students.neighborhood='Wittevrouwen');
+        break
+    case '3581' :
+        console.log(students.neighborhood = 'Oudwijk');
+        break
+    case '3583' :
+        console.log(students.neighborhood = 'Schildersbuurt');
+        break
+    default:
+        console.log('geen student in deze buurt')
+}
+
+console.log(students)
